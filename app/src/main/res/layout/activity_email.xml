@@ -6,25 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".EmailActivity"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/grey">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"/>
 
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:hint="Nhập eamil"
-        android:inputType="textEmailAddress"/>
+        android:background="@drawable/edt_text"
+        android:hint="Nhập Email"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="20dp"/>
 
     <EditText
         android:id="@+id/edtPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:hint="Nhập passworld"
-        android:inputType="textPassword"/>
+        android:background="@drawable/edt_text"
+        android:hint="Nhập Passworld"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="20dp"/>
 
     <Button
         android:id="@+id/btnLogin"

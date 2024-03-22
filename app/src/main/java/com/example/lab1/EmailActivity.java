@@ -59,7 +59,7 @@ public class EmailActivity extends AppCompatActivity {
                             if(task.isSuccessful()){
                                 FirebaseUser user = auth.getCurrentUser();
                                 Toast.makeText(context, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(EmailActivity.this, LogoutActivity.class));
+                                startActivity(new Intent(EmailActivity.this, MainActivity.class));
                             } else {
                                 Toast.makeText(context, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();
                             }
